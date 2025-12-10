@@ -92,6 +92,34 @@
             font-weight: bold;
             margin-right: 10px;
         }
+                .header-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .profile-text {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -100,8 +128,10 @@
         <p><strong>Experto en Optimización de Procesos</strong></p>
         
         <h2>Servicios</h2>
-        <ul class="services">
-            <li>Machine Learning para Mantenimiento Predictivo</li>
+        <div class="header-container">
+            <img src="Captura.PNG" alt="Logo" class="logo">
+            <h1>Consultoría en Procesos Industriales con IA</h1>
+        </div>            <li>Machine Learning para Mantenimiento Predictivo</li>
             <li>Procesamiento de Lenguaje Natural (NLP)</li>
             <li>Automatización de Procesos con RPA</li>
             <li>Análisis de Datos y Business Intelligence</li>
@@ -109,19 +139,10 @@
         </ul>
         
         <h2>Sobre mí</h2>
-        <p>Especialista en ciencia de datos y automatización industrial con experiencia en proyectos de machine learning, 
-        mantenimiento predictivo de aeronaves y optimización de procesos empresariales.</p>
-        
-        <a href="cv.pdf" class="cv-button" download>📄 Descargar CV</a>
-
-                
-        <h2>Contacto</h2>
-        <div class="contact-info">
-            <p>📧 <strong>Email:</strong> <a href="mailto:cuyami0000@gmail.com">cuyami0000@gmail.com</a></p>
-            <p>📱 <strong>Teléfono:</strong> <a href="tel:+34640292975">+34 640 29 29 75</a></p>
-            <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-barriuso" target="_blank">linkedin.com/in/daniel-barriuso</a></p>
-            <p>🔗 <strong>GitHub:</strong> <a href="https://github.com/cuyami" target="_blank">github.com/cuyami</a></p>
+        <div class="profile-section">
+            <img src="fotomia" alt="Daniel Barriuso" class="profile-photo">
+            <div class="profile-text">
+                <p>Especialista en ciencia de datos y automatización industrial con experiencia en proyectos de machine learning, 
+                mantenimiento predictivo de aeronaves y optimización de procesos empresariales.</p>
+            </div>
         </div>
-    </div>
-</body>
-</html>
